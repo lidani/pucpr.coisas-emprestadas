@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Borrow;
+use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -25,7 +27,8 @@ class HomeController extends Controller
   public function index(Request $request)
   {
     return view('home', [
-      'borroweds' => Borrow::where('user_id', $request->user()->id)->get()
+      'borroweds' => Borrow::where('from_id', $request->user()->id)->get(),
+      'users' => User::all()
     ]);
   }
 }
