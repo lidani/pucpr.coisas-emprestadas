@@ -6,6 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+/**
+ * @author Laravel
+ *
+ * Classe que faz o login do usuário
+ */
 class LoginController extends Controller
 {
     /*
