@@ -1,4 +1,4 @@
-## Projeto Coisas emprestadas PUCPR 02.2020
+## Projeto Coisas emprestadas feito em Laravel. PUCPR 02.2020
 
 ### Configurar
 - configurar .env (seguir o .env.example)
